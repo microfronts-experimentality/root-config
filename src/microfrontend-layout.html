@@ -1,0 +1,13 @@
+<single-spa-router>
+  <nav>
+    <application name="@microfronts/mf-header"></application>
+  </nav>
+  <main>
+    <route path="/" exact>
+      <application name="@microfronts/mf-products" loader="microfrontLoader" error="microfrontError"></application>
+    </route>
+    <route path="/producto/:productId" exact>
+      <application name="@microfronts/mf-products"></application>
+    </route>
+  </main>
+</single-spa-router>
